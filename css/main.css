@@ -1,0 +1,62 @@
+
+/* -------Generales---------- */
+
+:root {
+  --light-grey: #dbd8d7;
+  --med-dark-grey: #3c3a39;
+  --dark-grey: #1c1a19;
+  --orange: #ff6b00;
+  --light-cream: #fff5e1;
+  --white: #fff;
+  --principalFont: 'Poppins', sans-serif;
+  --secundaryFont: 'Roboto', sans-serif;
+  --especialFont: 'Crete Round', serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  background-color: var(--white);
+  font-size: 1.6rem;
+  font-family: var(--principalFont);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: var(--med-dark-grey);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.2rem;
+  position: fixed;
+  width: 100%;
+}
+
+header .name {
+  font-family: var(--secundaryFont);
+  color: var(--white);
+  font-size: 1.8rem;
+  padding: 1rem 1.2rem;
+}
+
+header .menu {
+  padding: 1rem 1.2rem;
+}
+
+header .menu img {
+  width: 1.8rem;
+  height: 1.2rem;
+}
