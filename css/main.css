@@ -5,6 +5,7 @@
   --light-grey: #dbd8d7;
   --med-dark-grey: #3c3a39;
   --dark-grey: #1c1a19;
+  --neutral-grey: #8993a4;
   --orange: #ff6b00;
   --light-cream: #fff5e1;
   --white: #fff;
@@ -28,6 +29,7 @@ html {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 p,
@@ -132,4 +134,160 @@ header .menu img {
   position: absolute;
   bottom: -52px;
   right: -270px;
+}
+
+.works {
+  width: 100%;
+  margin-top: 12rem;
+}
+
+.works_title {
+  padding: 2.5rem;
+}
+
+.works_title .title {
+  text-align: center;
+  font-family: var(--especialFont);
+  font-size: 4rem;
+  line-height: 5.2rem;
+  padding-bottom: 4rem;
+}
+
+.works .multipost {
+  padding: 2.5rem;
+  margin-top: 3rem;
+}
+
+.works .multipost img {
+  width: 100%;
+}
+
+.works .multipost .multipost_title {
+  font-family: var(--especialFont);
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  margin-top: 1.5rem;
+}
+
+.works .multipost p {
+  line-height: 2.4rem;
+  margin-top: 1rem;
+}
+
+.works .multipost .tags {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.works .multipost .tags li {
+  border: 1px solid var(--neutral-grey);
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+}
+
+.works .multipost button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.cards {
+  width: 100%;
+}
+
+.cards .card {
+  margin: 0 2.5rem;
+  background-image: url(../images/imgplaceholderback.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.cards .card .card_container {
+  padding: 15px;
+}
+
+.cards .card .card_container .card_title {
+  font-family: var(--especialFont);
+  color: var(--white);
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  margin-top: 7.2rem;
+}
+
+.cards .card .card_container p {
+  line-height: 2.4rem;
+  margin-top: 1.5rem;
+  color: var(--white);
+}
+
+.cards .card .card_container .tags {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.cards .card .card_container .tags li {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.cards .card button {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.aboutme {
+  width: 100%;
+  background-color: var(--dark-grey);
+  padding: 2.5rem;
+}
+
+.aboutme .aboutme_title {
+  font-family: var(--especialFont);
+  color: var(--orange);
+  font-size: 7.2rem;
+  letter-spacing: 0.037rem;
+  margin-top: 7rem;
+}
+
+.aboutme .description {
+  color: var(--white);
+}
+
+.aboutme .aboutme_btn_img {
+  display: flex;
+  gap: 1rem;
+}
+
+.aboutme .aboutme_btn_img button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  width: 50%;
+  height: fit-content;
+}
+
+.aboutme .aboutme_btn_img .image {
+  width: 50%;
+}
+
+.aboutme .aboutme_btn_img .image img {
+  position: relative;
+  left: 30px;
 }
