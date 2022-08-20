@@ -86,6 +86,10 @@ header .menu img {
   margin-top: 4.8rem;
 }
 
+.sep {
+  padding: 0 2.5rem;
+}
+
 /* -----------hero------------ */
 
 .hero {
@@ -96,7 +100,9 @@ header .menu img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  background-image: url(../images/illustration-header-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 284px 227px;
   overflow: hidden;
 }
 
@@ -130,27 +136,18 @@ header .menu img {
   margin-left: 1rem;
 }
 
-.hero .illustration {
-  position: absolute;
-  bottom: -52px;
-  right: -270px;
-}
-
 .works {
   width: 100%;
   margin-top: 12rem;
 }
 
-.works_title {
+.works h2 {
   padding: 2.5rem;
-}
-
-.works_title .title {
   text-align: center;
   font-family: var(--especialFont);
   font-size: 4rem;
+  font-weight: normal;
   line-height: 5.2rem;
-  padding-bottom: 4rem;
 }
 
 .works .multipost {
@@ -162,9 +159,10 @@ header .menu img {
   width: 100%;
 }
 
-.works .multipost .multipost_title {
+.works .multipost h3 {
   font-family: var(--especialFont);
   font-size: 3.6rem;
+  font-weight: normal;
   line-height: 4.4rem;
   margin-top: 1.5rem;
 }
@@ -212,8 +210,9 @@ header .menu img {
   padding: 15px;
 }
 
-.cards .card .card_container .card_title {
+.cards .card .card_container h3 {
   font-family: var(--especialFont);
+  font-weight: normal;
   color: var(--white);
   font-size: 3.2rem;
   line-height: 4.4rem;
@@ -252,27 +251,33 @@ header .menu img {
 .aboutme {
   width: 100%;
   background-color: var(--dark-grey);
+  margin-top: 10rem;
+}
+
+.aboutme .aboutme_content {
+  height: 65rem;
+  background-image: url(../images/illustration-aboutmer-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 230px 380px;
+  overflow: hidden;
   padding: 2.5rem;
 }
 
-.aboutme .aboutme_title {
+.aboutme .aboutme_content h4 {
   font-family: var(--especialFont);
   color: var(--orange);
   font-size: 7.2rem;
+  font-weight: normal;
   letter-spacing: 0.037rem;
-  margin-top: 7rem;
+  margin-top: 9rem;
 }
 
 .aboutme .description {
   color: var(--white);
+  margin-top: 1rem;
 }
 
-.aboutme .aboutme_btn_img {
-  display: flex;
-  gap: 1rem;
-}
-
-.aboutme .aboutme_btn_img button {
+.aboutme .aboutme_btn {
   background-color: var(--orange);
   border: none;
   color: var(--white);
@@ -290,4 +295,30 @@ header .menu img {
 .aboutme .aboutme_btn_img .image img {
   position: relative;
   left: 30px;
+}
+
+.skills {
+  margin-top: 12rem;
+}
+
+.skills .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.skills .skill h4 {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.skills .skill .skill_li {
+  color: var(--white);
+  font-size: 2.2rem;
 }
