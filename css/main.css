@@ -5,6 +5,7 @@
   --light-grey: #dbd8d7;
   --med-dark-grey: #3c3a39;
   --dark-grey: #1c1a19;
+  --neutral-grey: #8993a4;
   --orange: #ff6b00;
   --light-cream: #fff5e1;
   --white: #fff;
@@ -28,6 +29,7 @@ html {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 p,
@@ -84,6 +86,10 @@ header .menu img {
   margin-top: 4.8rem;
 }
 
+.sep {
+  padding: 0 2.5rem;
+}
+
 /* -----------hero------------ */
 
 .hero {
@@ -94,7 +100,9 @@ header .menu img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  background-image: url(../images/illustration-header-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 284px 227px;
   overflow: hidden;
 }
 
@@ -128,8 +136,189 @@ header .menu img {
   margin-left: 1rem;
 }
 
-.hero .illustration {
-  position: absolute;
-  bottom: -52px;
-  right: -270px;
+.works {
+  width: 100%;
+  margin-top: 12rem;
+}
+
+.works h2 {
+  padding: 2.5rem;
+  text-align: center;
+  font-family: var(--especialFont);
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: 5.2rem;
+}
+
+.works .multipost {
+  padding: 2.5rem;
+  margin-top: 3rem;
+}
+
+.works .multipost img {
+  width: 100%;
+}
+
+.works .multipost h3 {
+  font-family: var(--especialFont);
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: 4.4rem;
+  margin-top: 1.5rem;
+}
+
+.works .multipost p {
+  line-height: 2.4rem;
+  margin-top: 1rem;
+}
+
+.works .multipost .tags {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.works .multipost .tags li {
+  border: 1px solid var(--neutral-grey);
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+}
+
+.works .multipost button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.cards {
+  width: 100%;
+}
+
+.cards .card {
+  margin: 0 2.5rem;
+  background-image: url(../images/imgplaceholderback.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.cards .card .card_container {
+  padding: 15px;
+}
+
+.cards .card .card_container h3 {
+  font-family: var(--especialFont);
+  font-weight: normal;
+  color: var(--white);
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  margin-top: 7.2rem;
+}
+
+.cards .card .card_container p {
+  line-height: 2.4rem;
+  margin-top: 1.5rem;
+  color: var(--white);
+}
+
+.cards .card .card_container .tags {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.cards .card .card_container .tags li {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.cards .card button {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.aboutme {
+  width: 100%;
+  background-color: var(--dark-grey);
+  margin-top: 10rem;
+}
+
+.aboutme .aboutme_content {
+  height: 65rem;
+  background-image: url(../images/illustration-aboutmer-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 230px 380px;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+
+.aboutme .aboutme_content h4 {
+  font-family: var(--especialFont);
+  color: var(--orange);
+  font-size: 7.2rem;
+  font-weight: normal;
+  letter-spacing: 0.037rem;
+  margin-top: 9rem;
+}
+
+.aboutme .description {
+  color: var(--white);
+  margin-top: 1rem;
+}
+
+.aboutme .aboutme_btn {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  width: 50%;
+  height: fit-content;
+}
+
+.aboutme .aboutme_btn_img .image {
+  width: 50%;
+}
+
+.aboutme .aboutme_btn_img .image img {
+  position: relative;
+  left: 30px;
+}
+
+.skills {
+  margin-top: 12rem;
+}
+
+.skills .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.skills .skill h4 {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.skills .skill .skill_li {
+  color: var(--white);
+  font-size: 2.2rem;
 }
