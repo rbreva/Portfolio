@@ -325,8 +325,12 @@ header .menu img {
 
 .form{
   padding: 24px;
+}
+
+.form form{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form p{
@@ -349,6 +353,16 @@ header .menu img {
   width: 100%;
   height: 115px;
   border: none;
-  padding: 20px;
+  padding: 2rem;
   background-color: #f8f8f7;
+}
+
+.form button{
+  font-size: 1.7rem;
+  background-color: var(--orange);
+  padding: 10px;
+  border: none;
+  color: var(--white);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
