@@ -195,6 +195,14 @@ header .menu img {
 
 .cards {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
 }
 
 .cards .card {
@@ -306,7 +314,7 @@ header .menu img {
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .skills .skill h4 {
@@ -324,14 +332,14 @@ header .menu img {
 }
 
 .form {
-  padding: 24px;
+  padding: 2.4rem;
 }
 
 .form form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 
 .form .form_p {
@@ -340,6 +348,7 @@ header .menu img {
   color: #172b4d;
   font-weight: bold;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .form input {
@@ -374,5 +383,11 @@ header .menu img {
   justify-content: center;
   gap: 21px;
   padding: 20px;
+  padding-bottom: 5px;
   border-top: 1px solid var(--light-grey);
+}
+
+.line_footer {
+  text-align: center;
+  margin-bottom: 10px;
 }
