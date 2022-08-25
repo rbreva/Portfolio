@@ -52,31 +52,31 @@ body {
   height: 100vh;
 }
 
+/* -----header------- */
+
 header {
   background-color: var(--med-dark-grey);
-  display: flex;
-  justify-content: space-between;
   padding: 0 1.2rem;
   position: fixed;
   width: 100%;
+}
+
+.header__container {
   height: 4.8rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-header .name {
+.header__logo {
   font-family: var(--secundaryFont);
   color: var(--white);
   font-size: 1.8rem;
   padding: 0 1.2rem;
 }
 
-header .menu {
+.header__menu {
   padding: 0 1.2rem;
-}
-
-header .menu img {
-  width: 1.8rem;
-  height: 1.2rem;
 }
 
 /* ---------Container--------- */
@@ -191,6 +191,15 @@ header .menu img {
   padding: 1rem;
   margin-top: 1rem;
   font-size: 1.7rem;
+  transition-property: font-size;
+  transition-duration: 2s;
+}
+
+.works .multipost button:hover {
+  color: var(--orange);
+  background-color: #FFF5E1;
+  border: 1px var(--orange) solid;
+  font-size: 2rem;
 }
 
 .cards {
