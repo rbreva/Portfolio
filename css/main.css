@@ -184,7 +184,7 @@ header {
   font-size: 1.5rem;
 }
 
-.works .multipost button {
+.works .multipost .multipost_btn {
   background-color: var(--orange);
   border: none;
   color: var(--white);
@@ -195,9 +195,9 @@ header {
   transition-duration: 2s;
 }
 
-.works .multipost button:hover {
+.works .multipost .multipost_btn:hover {
   color: var(--orange);
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   border: 1px var(--orange) solid;
   font-size: 2rem;
 }
