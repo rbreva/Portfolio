@@ -75,6 +75,20 @@ header {
   padding: 0 1.2rem;
 }
 
+.header__logo:hover {
+  animation-name: rotate;
+  animation-duration: 0.7s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .header__menu {
   padding: 0 1.2rem;
 }
