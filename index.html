@@ -5,142 +5,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link  rel="icon" type="image/png" href="images/mm_ico.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;700&family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
 <header>
-    <div class="name"><a href="#">Mauricio Mendoza</a></div>
-    <nav class="menu"><img src="images/menu.svg" alt="menu"></nav>
+    <div class="header__container">
+        <div class="header__logo"><a href="#">Mauricio Mendoza</a></div>
+        <div class="header__menu"><img src="images/menu.svg" alt="menu"></div>
+        <nav class="header__nav">
+            <ul class="header__nav__menu">
+                <li class="header__nav__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav__item"><a href="#aboutme">About</a></li>
+                <li class="header__nav__item"><a href="#contact">Contact</a></li>
+                <li class="header__nav__item"><a href="#"><img src="images/icons/msg.svg" alt="msg"></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<section class="container">
+
+<section class="hero__container">
     <div class="hero">
+        <div class="hero_content">
         <h1>Hey There. <br>I’m Mauricio</h1>
         <h2>I’am a Software Developer</h2>
         <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-        <ul>
-            <li><a href="#"><img src="images/links/github.svg" alt="github"></a></li>
-            <li><a href="#"><img src="images/links/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="#"><img src="images/links/angelist.svg" alt="angelist"></a></li>
-            <li><a href="#"><img src="images/links/twitter.svg" alt="twitter"></a></li>
-            <li><a href="#"><img src="images/links/medium.svg" alt="medium"></a></li>
-        </ul>
+        </div>
+        <div class="hero__icons">
+            <ul>
+                <li><a href="#"><img src="images/links/github.svg" alt="github"></a></li>
+                <li><a href="#"><img src="images/links/linkedin.svg" alt="linkedin"></a></li>
+                <li><a href="#"><img src="images/links/angelist.svg" alt="angelist"></a></li>
+                <li><a href="#"><img src="images/links/twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img src="images/links/medium.svg" alt="medium"></a></li>
+            </ul>
+        </div>
     </div>
 </section>
-<div class="works">
-    <h2>My Recent Works</h2>
-    <div class="sep"><hr></div>
-    <div class="multipost">
-        <img src="images/imgplaceholder.jpg" alt="Multi-Post">
-        <h3>Multi-Post Stories</h3>
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-        <ul class="tags">
-            <li>css</li>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
+
+<div class="works" id="portfolio">
+
+    <div class="works__title">
+        <h2 class="works__h2">My Recent Works</h2>
+        <div class="sep"><hr></div>
     </div>
+
+    <div class="multipost">
+        <div class="multipost__image">
+            <img src="images/imgplaceholder.jpg" alt="Multi-Post">
+        </div>
+        <div class="multipost__content">
+            <h3 class="multipost__h3">Multi-Post Stories</h3>
+            <p class="multipost__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul class="multipost__tags">
+                <li class="multipost__tags__li">css</li>
+                <li class="multipost__tags__li">html</li>
+                <li class="multipost__tags__li">bootstrap</li>
+                <li class="multipost__tags__li">Ruby</li>
+            </ul>
+            <button type="button" class="multipost__btn">See Project</button>
+        </div>
+    </div>
+
     <div class="cards">
-        <div class="card">
-            <div class="card_container">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                <ul class="tags">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
+
+        <div class="cards__card backcard01">
+            <div class="card__container ">
+                <h3 class="card__h3">Profesional Art Printing Data</h3>
+                <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="card__tags">
+                    <li class="card__tags__li">html</li>
+                    <li class="card__tags__li">bootstrap</li>
+                    <li class="card__tags__li">Ruby</li>
                 </ul>
             </div>
-            <button  type="button">See Project</button>
+            <button type="button" class="card__btn">See Project</button>
         </div>
 
-        <div class="card">
-            <div class="card_container">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                <ul class="tags">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
+        <div class="cards__card backcard02">
+            <div class="card__container ">
+                <h3 class="card__h3">Profesional Art Printing Data</h3>
+                <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="card__tags">
+                    <li class="card__tags__li">html</li>
+                    <li class="card__tags__li">bootstrap</li>
+                    <li class="card__tags__li">Ruby</li>
                 </ul>
             </div>
-            <button  type="button">See Project</button>
+            <button type="button" class="card__btn">See Project</button>
         </div>
 
-        <div class="card">
-            <div class="card_container">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                <ul class="tags">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
+        <div class="cards__card backcard03">
+            <div class="card__container ">
+                <h3 class="card__h3">Profesional Art Printing Data</h3>
+                <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="card__tags">
+                    <li class="card__tags__li">html</li>
+                    <li class="card__tags__li">bootstrap</li>
+                    <li class="card__tags__li">Ruby</li>
                 </ul>
             </div>
-            <button  type="button">See Project</button>
+            <button type="button" class="card__btn">See Project</button>
         </div>
-        <div class="card">
-            <div class="card_container">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                <ul class="tags">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
+
+        <div class="cards__card backcard01">
+            <div class="card__container">
+                <h3 class="card__h3">Profesional Art Printing Data</h3>
+                <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="card__tags">
+                    <li class="card__tags__li">html</li>
+                    <li class="card__tags__li">bootstrap</li>
+                    <li class="card__tags__li">Ruby</li>
                 </ul>
             </div>
-            <button  type="button">See Project</button>
+            <button type="button" class="card__btn">See Project</button>
         </div>
+
+        <div class="cards__card backcard02">
+            <div class="card__container">
+                <h3 class="card__h3">Profesional Art Printing Data</h3>
+                <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="card__tags">
+                    <li class="card__tags__li">html</li>
+                    <li class="card__tags__li">bootstrap</li>
+                    <li class="card__tags__li">Ruby</li>
+                </ul>
+            </div>
+            <button type="button" class="card__btn">See Project</button>
+        </div>
+
+        <div class="cards__card backcard03">
+            <div class="card__container">
+                <h3 class="card__h3">Profesional Art Printing Data</h3>
+                <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="card__tags">
+                    <li class="card__tags__li">html</li>
+                    <li class="card__tags__li">bootstrap</li>
+                    <li class="card__tags__li">Ruby</li>
+                </ul>
+            </div>
+            <button type="button" class="card__btn">See Project</button>
+        </div>
+
     </div>
 </div>
-<div class="aboutme">
-    <div class="aboutme_content">
-        <h4>About me</h4>
-        <p class="description">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+
+<div class="aboutme" id="aboutme">
+
+    <div class="aboutme__content">
+        <h4 class="aboutme__content__h4">About me</h4>
+        <p class="aboutme__description">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <button type="button" class="aboutme_btn">Get My Resume</button>
     </div>
+
     <div class="sep"><hr></div>
+
     <div class="skills">
-        <ul class="skill">
-            <li><h4><img src="images/icons/diamond.svg" alt="icon" />Language</h4></li>
-            <li class="skill_li">Javascript</li>
-            <li class="skill_li">Ruby</li>
-            <li class="skill_li">Html</li>
-            <li class="skill_li">Css</li>
+        <ul class="skills__skill">
+            <li><h4 class="skills__skill__h4"><img src="images/icons/diamond.svg" alt="icon" />Language</h4></li>
+            <li class="skill__li">Javascript</li>
+            <li class="skill__li">Ruby</li>
+            <li class="skill__li">Html</li>
+            <li class="skill__li">Css</li>
         </ul>
-        <ul class="skill">
-            <li><h4><img src="images/icons/rectangle.svg" alt="icon" />Frameworks</h4></li>
-            <li class="skill_li">Bootstrap</li>
-            <li class="skill_li">Ruby on Rails</li>
-            <li class="skill_li">RSPec</li>
-            <li class="skill_li">CapyBara</li>
-            <li class="skill_li">Selenium</li>
+        <ul class="skills__skill">
+            <li><h4 class="skills__skill__h4"><img src="images/icons/rectangle.svg" alt="icon" />Frameworks</h4></li>
+            <li class="skill__li">Bootstrap</li>
+            <li class="skill__li">Ruby on Rails</li>
+            <li class="skill__li">RSPec</li>
+            <li class="skill__li">CapyBara</li>
+            <li class="skill__li">Selenium</li>
         </ul>
-        <ul class="skill">
-            <li><h4><img src="images/icons/circle.svg" alt="icon" />Skills</h4></li>
-            <li class="skill_li">Codekit</li>
-            <li class="skill_li">Github</li>
-            <li class="skill_li">Codepen</li>
-            <li class="skill_li">Gitlab</li>
-            <li class="skill_li">Terminal</li>
+        <ul class="skills__skill">
+            <li><h4 class="skills__skill__h4"><img src="images/icons/circle.svg" alt="icon" />Skills</h4></li>
+            <li class="skill__li">Codekit</li>
+            <li class="skill__li">Github</li>
+            <li class="skill__li">Codepen</li>
+            <li class="skill__li">Gitlab</li>
+            <li class="skill__li">Terminal</li>
         </ul>
     </div>
 </div>
-<div class="form">
-    <form action="https://formspree.io/f/mayknebl" method="post">
-        <p class="form_p">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+
+<div class="form__content" id="contact">
+    <p class="form_p">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+    <form class="form" action="https://formspree.io/f/mayknebl" method="post">
         <input type="text" name="fullname" placeholder="Full name" maxlength="30" required />
         <input type="email" name="emailaddress" placeholder="Email address"  required />
 
         <textarea  name="txt_area" placeholder="Enter text here" maxlength="500" required></textarea>
         <button class="form_btn" type="submit">Get in Touch</button>
     </form>
-    
 </div>
+
 <footer>
 <ul class="links">
     <li class="link"><a href="#"><img src="images/links/github_b.svg" alt="github"></a></li>
