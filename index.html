@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link  rel="icon" type="image/png" href="images/mm_ico.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;700&family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;700&family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -18,9 +19,9 @@
         <div class="header__menu"><img src="images/menu.svg" alt="menu"></div>
         <nav class="header__nav">
             <ul class="header__nav__menu">
-                <li class="header__nav__item"><a href="#">Portfolio</a></li>
-                <li class="header__nav__item"><a href="#">About</a></li>
-                <li class="header__nav__item"><a href="#">Contact</a></li>
+                <li class="header__nav__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav__item"><a href="#aboutme">About</a></li>
+                <li class="header__nav__item"><a href="#contact">Contact</a></li>
                 <li class="header__nav__item"><a href="#"><img src="images/icons/msg.svg" alt="msg"></a></li>
             </ul>
         </nav>
@@ -46,7 +47,7 @@
     </div>
 </section>
 
-<div class="works">
+<div class="works" id="portfolio">
 
     <div class="works__title">
         <h2 class="works__h2">My Recent Works</h2>
@@ -73,7 +74,7 @@
     <div class="cards">
 
         <div class="cards__card backcard01">
-            <div class="card__container">
+            <div class="card__container ">
                 <h3 class="card__h3">Profesional Art Printing Data</h3>
                 <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                 <ul class="card__tags">
@@ -86,7 +87,7 @@
         </div>
 
         <div class="cards__card backcard02">
-            <div class="card__container">
+            <div class="card__container ">
                 <h3 class="card__h3">Profesional Art Printing Data</h3>
                 <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                 <ul class="card__tags">
@@ -99,7 +100,7 @@
         </div>
 
         <div class="cards__card backcard03">
-            <div class="card__container">
+            <div class="card__container ">
                 <h3 class="card__h3">Profesional Art Printing Data</h3>
                 <p class="card__p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                 <ul class="card__tags">
@@ -153,7 +154,7 @@
     </div>
 </div>
 
-<div class="aboutme">
+<div class="aboutme" id="aboutme">
 
     <div class="aboutme__content">
         <h4 class="aboutme__content__h4">About me</h4>
@@ -190,7 +191,7 @@
     </div>
 </div>
 
-<div class="form__content">
+<div class="form__content" id="contact">
     <p class="form_p">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
     <form class="form" action="https://formspree.io/f/mayknebl" method="post">
         <input type="text" name="fullname" placeholder="Full name" maxlength="30" required />
