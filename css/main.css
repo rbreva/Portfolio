@@ -436,7 +436,7 @@ header {
     background-image: url(../images/imgplaceholderback02.jpg);
     border: 2px solid #000;
   }
-  
+
   .backcard03:hover {
     background-image: url(../images/imgplaceholderback03.jpg);
     border: 2px solid #000;
@@ -453,7 +453,6 @@ header {
   .card__btn:hover {
     display: block;
   }
-
 }
 
 /* ------------aboutme---------- */
@@ -554,6 +553,7 @@ header {
     display: flex;
     justify-content: space-between;
   }
+
   .skills__skill {
     align-items: flex-start;
   }
