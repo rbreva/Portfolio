@@ -10,15 +10,15 @@ Portfolio based on Template 2
 - HTML
 - CSS
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://github.com/rbreva/Portfolio.git)
+[Live Demo Link](https://rbreva.github.io/Portfolio/)
 
 ### Prerequisites
 
 No prerequisite required
 
-## Authors
+## Author
 
 👤 **R Mauricio Mendoza H**
 
