@@ -415,6 +415,14 @@ header {
   font-size: 1.7rem;
 }
 
+.multipost__btn:focus {
+  background: rgba(224, 83, 4, 1);
+}
+
+.cards__btn:focus {
+  background: rgba(224, 83, 4, 1);
+}
+
 @media (min-width: 768px) {
   .cards {
     flex-direction: row;
@@ -427,9 +435,33 @@ header {
     width: 31%;
   }
 
+  .card__btn {
+    display: none;
+  }
+
+  .card__h3 {
+    margin-top: 17.2rem;
+  }
+
   .backcard01:hover {
     background-image: url(../images/imgplaceholderback01.jpg);
     border: 2px solid #000;
+  }
+
+  .backcard01:hover .card__btn {
+    display: block;
+  }
+
+  .backcard01:hover .card__tags__li {
+    display: none;
+  }
+
+  .backcard01:hover .card__h3 {
+    display: none;
+  }
+
+  .backcard01:hover .card__p {
+    display: none;
   }
 
   .backcard02:hover {
@@ -437,20 +469,40 @@ header {
     border: 2px solid #000;
   }
 
+  .backcard02:hover .card__btn {
+    display: block;
+  }
+
+  .backcard02:hover .card__tags__li {
+    display: none;
+  }
+
+  .backcard02:hover .card__h3 {
+    display: none;
+  }
+
+  .backcard02:hover .card__p {
+    display: none;
+  }
+
   .backcard03:hover {
     background-image: url(../images/imgplaceholderback03.jpg);
     border: 2px solid #000;
   }
 
-  .card__h3 {
-    margin-top: 17.2rem;
-  }
-
-  .card__btn {
+  .backcard03:hover .card__tags__li {
     display: none;
   }
 
-  .card__btn:hover {
+  .backcard03:hover .card__h3 {
+    display: none;
+  }
+
+  .backcard03:hover .card__p {
+    display: none;
+  }
+
+  .backcard03:hover .card__btn {
     display: block;
   }
 }
@@ -498,6 +550,10 @@ header {
 .aboutme_btn:hover {
   background-color: var(--backbtn);
   color: var(--orange);
+}
+
+.aboutme_btn:focus {
+  background: rgba(224, 83, 4, 1);
 }
 
 @media (min-width: 768px) {
@@ -594,6 +650,10 @@ header {
   height: 11.5rem;
   border: none;
   padding: 2rem;
+  max-width: 700px;
+  min-width: 684px;
+  max-height: 115px;
+  min-height: 110px;
   background-color: #fbf8f7;
 }
 
