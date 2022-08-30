@@ -423,10 +423,6 @@ header {
   background: rgba(224, 83, 4, 1);
 }
 
-.aboutme_btn:focus {
-  background: rgba(224, 83, 4, 1);
-}
-
 @media (min-width: 768px) {
   .cards {
     flex-direction: row;
@@ -437,6 +433,14 @@ header {
 
   .cards__card {
     width: 31%;
+  }
+
+  .card__btn {
+    display: none;
+  }
+
+  .card__h3 {
+    margin-top: 17.2rem;
   }
 
   .backcard01:hover {
@@ -498,14 +502,6 @@ header {
     display: none;
   }
 
-  .card__h3 {
-    margin-top: 17.2rem;
-  }
-
-  .card__btn {
-    display: none;
-  }
-
   .backcard03:hover .card__btn {
     display: block;
   }
@@ -556,8 +552,8 @@ header {
   color: var(--orange);
 }
 
-.textarea {
-
+.aboutme_btn:focus {
+  background: rgba(224, 83, 4, 1);
 }
 
 @media (min-width: 768px) {
