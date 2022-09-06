@@ -112,6 +112,7 @@ header {
   left: -100%;
   height: 100vh;
   padding: 24px;
+  transition: 250ms height ease-in-out;
 }
 
 .close__menu {
