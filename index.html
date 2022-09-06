@@ -16,13 +16,14 @@
 <header>
     <div class="header__container">
         <div class="header__logo"><a href="#">Mauricio Mendoza</a></div>
-        <div class="header__menu"><img src="images/menu.svg" alt="menu-icon-for-mobile"></div>
+        <div class="header__menu" id="openMenu"><img src="images/menu.svg" alt="menu-icon-for-mobile"></div>
         <nav class="header__nav">
             <ul class="header__nav__menu">
-                <li class="header__nav__item"><a href="#portfolio">Portfolio</a></li>
-                <li class="header__nav__item"><a href="#aboutme">About</a></li>
-                <li class="header__nav__item"><a href="#contact">Contact</a></li>
-                <li class="header__nav__item"><a href="#"><img src="images/icons/msg.svg" alt="contact-icon"></a></li>
+                <li class="close__menu" id="closeMenu"><img src="images/icons/close_menu.svg" alt="Close"></li>
+                <li class="header__nav__item portfolioLink"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav__item aboutmeLink"><a href="#aboutme">About</a></li>
+                <li class="header__nav__item contactLink"><a href="#contact">Contact</a></li>
+                <li class="header__nav__item desk"><a href="#"><img src="images/icons/msg.svg" alt="contact-icon"></a></li>
             </ul>
         </nav>
     </div>
@@ -212,5 +213,6 @@
 </ul>
 <div class="line_footer"><img src="images/icons/line_footer_mobile.svg" alt="home-line_mobile-icon"></div>
 </footer>
+<script src="js/menu.js"></script>
 </body>
 </html>

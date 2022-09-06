@@ -49,6 +49,16 @@ img {
   height: auto;
 }
 
+.desk {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desk {
+    display: block;
+  }
+}
+
 body {
   background-color: var(--white);
   font-size: 1.6rem;
@@ -95,7 +105,33 @@ header {
 }
 
 .header__nav {
-  display: none;
+  background-color: #3c3a39;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  padding: 24px;
+}
+
+.close__menu {
+  text-align: end;
+}
+
+.close__menu img {
+  width: 40px;
+}
+
+.header__nav__item {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 12px;
+}
+
+.header__nav__item a {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: var(--contentFont);
+  color: #fff5e1;
 }
 
 @media (min-width: 768px) {
