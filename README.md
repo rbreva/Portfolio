@@ -9,9 +9,10 @@ Portfolio based on Template 2
 
 - HTML
 - CSS
+- JS
 
 
-## Live Demo 
+## Live Demo
 [Live Demo Link](https://rbreva.github.io/Portfolio/)
 
 
@@ -26,6 +27,12 @@ No prerequisite required
 - GitHub: [GitHub](https://github.com/rbreva)
 - Behance: [Behance](https://www.behance.net/rbreva)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/r-mauricio-mendoza-huerta-0782a9166/)
+
+👤 ** Osvaldo Jose Barrios Cortina **
+
+- Twitter : [@OsvaldoBarrio20](https://twitter.com/OsvaldoBarrio20)
+- GitHub  : [@OsvaldoBC](https://github.com/OsvaldoBC)
+- LinkedIn: [osvaldo-barrios-data-science](https://linkedin.com/in/osvaldo-barrios-data-science)
 
 
 ## 🤝 Contributing
