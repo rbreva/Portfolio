@@ -397,6 +397,11 @@ header {
   background-size: cover;
 }
 
+.backcard {
+  background-image: url(../images/imgplaceholderback01b.jpg);
+  border: 2px solid #fff;
+}
+
 .backcard01 {
   background-image: url(../images/imgplaceholderback01b.jpg);
   border: 2px solid #fff;
