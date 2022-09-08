@@ -77,8 +77,22 @@ for (let i = 0; i < projectData.length; i += 1) {
   const cardTags = document.createElement('ul');
   cardTags.classList.add('card__tags');
 
+  /* eslint-disable */
+  function openPopup(i) {
+    popModal.classList.remove('hidden');
+
+    document.querySelector('.popup__header__title').innerHTML = projectData[i].name;
+    document.querySelector('.popup__p').innerHTML = projectData[i].description;
+    document.querySelector('.popup__image').src = `/images/cards/${projectData[i].image}`;
+
+    hero.classList.add('blur');
+    aboutme.classList.add('blur');
+    contact.classList.add('blur');
+    works.classList.add('blur');
+    footer.classList.add('blur');
+  }
+
   for (let it = 0; it < projectData[i].technologies.length; it += 1) {
-    // console.log(projectData[i].technologies[it])
     const cardTagsLi = document.createElement('li');
     cardTagsLi.classList.add('card__tags__li');
     cardTagsLi.textContent = projectData[i].technologies[it];
@@ -100,20 +114,6 @@ for (let i = 0; i < projectData.length; i += 1) {
   cardsCard.appendChild(cardBtn);
 
   document.querySelector('.cards').appendChild(cardsCard);
-}
-
-function openPopup(i) {
-  popModal.classList.remove('hidden');
-
-  document.querySelector('.popup__header__title').innerHTML = projectData[i].name;
-  document.querySelector('.popup__p').innerHTML = projectData[i].description;
-  document.querySelector('.popup__image').src = `/images/cards/${projectData[i].image}`;
-
-  hero.classList.add('blur');
-  aboutme.classList.add('blur');
-  contact.classList.add('blur');
-  works.classList.add('blur');
-  footer.classList.add('blur');
 }
 
 modalClose.addEventListener('click', () => {
