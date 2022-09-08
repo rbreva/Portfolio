@@ -59,6 +59,10 @@ img {
   }
 }
 
+.blur {
+  filter: blur(10px);
+}
+
 body {
   background-color: var(--white);
   font-size: 1.6rem;
@@ -380,6 +384,110 @@ header {
   }
 }
 
+/* ------- popup ------------------ */
+
+.hidden {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50px;
+  left: 16px;
+  right: 16px;
+  bottom: 38px;
+  z-index: 20;
+  background: #fff;
+  overflow: auto;
+}
+
+.popup__card {
+  padding: 16px;
+}
+
+.popup__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.popup__header__title {
+  font-family: var(--secundaryFont);
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: #172b4d;
+}
+
+.close-popup {
+  width: 40px;
+}
+
+.popup__tags {
+  margin-top: 20px;
+}
+
+.popup__tags .tags {
+  display: flex;
+  gap: 10px;
+}
+
+.popup__tags .tags .tag {
+  border: 1px solid #dfe1e6;
+  padding: 8px;
+}
+
+.popup__content {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.popup__p {
+  color: #344563;
+  line-height: 2.4rem;
+}
+
+.popup__link {
+  display: flex;
+  background-color: #ff6b00;
+  padding: 10px;
+  align-items: center;
+  color: #fff;
+  gap: 5px;
+  font-size: 1.7rem;
+}
+
+.popup__buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.popup__link img {
+  width: 30px;
+}
+
+@media (min-width: 768px) {
+  .popup {
+    top: 120px;
+    left: 130px;
+    right: 130px;
+    bottom: 100px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .popup__content {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .popup__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 /* ------- works Cards------- */
 
 .cards {
@@ -458,6 +566,7 @@ header {
   margin-top: 1rem;
   font-size: 1.7rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .multipost__btn:focus {
