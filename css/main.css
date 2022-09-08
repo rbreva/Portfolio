@@ -834,6 +834,11 @@ header {
   color: var(--orange);
 }
 
+.msj_alert {
+  color: #ff6b00;
+  font-size: 13px;
+}
+
 @media (min-width: 768px) {
   .form__content {
     max-width: 115rem;
