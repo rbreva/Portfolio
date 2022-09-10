@@ -35,6 +35,8 @@ function messageSent() {
   document.getElementById('fullname').value = '';
   document.getElementById('emailaddress').value = '';
   document.getElementById('textareaForm').value = '';
+
+  localStorage.removeItem('formData');
 }
 
 formBtn.addEventListener('click', (event) => {
